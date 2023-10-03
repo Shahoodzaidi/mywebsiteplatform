@@ -1,0 +1,306 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    width: 100%;
+    height: 65px;  
+    position: relative;
+    background-color: black;
+}
+.nav2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3vh;
+    padding: 0px 1vw;
+    font-size: larger;
+    font-family: sans-serif;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+
+    
+}
+.nav{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+   
+   
+    
+}
+h2{
+    font-size: 1.5vw;
+    font-family: sans-serif, poppins;
+    
+    cursor: pointer;
+    transition: 1s all ease;
+    color: white;
+    padding:3vw ;
+}
+.nav i{
+      font-size: larger;
+      font-weight: 800;
+      transition: 1s ease;
+      color: white;
+    
+}
+
+.nav2::before,
+.nav2::after{
+    position: absolute;
+    content:'';
+    width: 0;
+    height: 2px;
+
+    transition: 1s all ease-in-out;
+
+}
+
+.nav2::before{
+    top: 0;
+    left: 0;
+
+}
+.nav2::after{
+    bottom: 0;
+    right: 0;
+    
+}
+.nav2:hover::before{
+    right: 0;
+    left: auto;
+    width: 100%;
+    
+   background-color: rgb(255, 72, 0);
+    
+}
+.nav2:hover::after{
+    right: 0;
+    left: auto;
+    width: 100%;
+    background-color:  rgb(0, 140, 255) ;
+    
+
+    
+
+}
+h2:hover{
+    transition: 1s all ease;
+    color: aqua;
+    transform: rotate(360deg);
+    
+   
+    
+}
+ h3:hover{
+            color: aqua;
+            zoom: 1.4 ;
+            
+            transition: 1.0s all;
+            text-decoration: underline yellowgreen;
+            
+}
+i:hover{
+    color: rgb(226, 0, 177);
+            padding: 6px 4px;
+            transition: 1s all ease;
+            transform: rotate(360deg);
+            zoom: 1.40;
+}
+.container{
+               width: 100%;
+               height: calc(100% - 65px);
+              display: flex;
+              position: relative;
+            
+}
+.web1{
+    height: 100%;
+    width: 55%;
+    
+    padding: 5vw 5vw;
+    
+}
+.web2{
+    height: 100%;
+    width: 45%;
+     display: flex; 
+}
+
+.web1 h1{
+    font-size: 4.2vw ;
+    line-height: 5vw;
+}
+span{
+    
+    border-radius: 1vw;
+    font-weight: 800;
+    color: #00DFC0;
+    animation: anime 2s infinite ;
+    transition: all ease-in;
+    
+}
+
+p{
+    font-size: 1.1vw;
+    font-weight: 600;
+    color: #666;
+    width: 80%;
+    margin-top: 2vw;
+    margin-bottom: 4vw;
+    font-family: poppins, Arial, Helvetica, sans-serif;
+}
+button{
+     font-size: 1.3vw;
+     padding: 1.3vw 2.3vw;
+     background-color: #00DFC0;
+     border-radius: 5px;
+     font-weight: 700;
+     margin-left: 10vw;
+     cursor: pointer;
+
+}
+.web2 img{
+    height: 90%;
+    width: 100% ;
+    transition: 1.1s all ease;
+    cursor: pointer;
+    overflow: hidden;
+   
+}
+img:hover{
+    transform: scale(0.6);
+} 
+button:hover{
+     transform: translate(10px); 
+    color: white;
+    transition: 1s ease-in-out;
+    background-color: black;
+    
+}
+
+@media (max-width:668px) {
+    .nav2 h3{
+        display: none;
+    }
+    h2{
+        font-size: 2.7vh;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 900;
+    }
+    .web1 h1{
+        font-size: 30px;
+        line-height: 27px;
+        margin-top: 7%;
+        width: 88vw;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+   
+     span{
+    font-size: 5vh;
+   
+}
+.nav i{
+    padding-right: 2vh;
+}
+ p
+ {
+    width: 87vw;
+    font-size: 14px;
+    margin-top: 10%;
+    font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+button{
+    margin-top: 64vh;
+    font-size: 4.4vw;
+    margin-left: 13vh;
+    padding: 10px ;
+    
+}
+.web2{
+width: auto;
+position: absolute;
+margin-top: 60%;
+
+}
+.web2 img{
+height: 55vh;
+margin-top: 35%
+}  
+
+@keyframes anime {
+    from{
+        zoom: 0;
+        
+    }
+    to{
+        color: blueviolet;
+        
+       
+    }
+}
+
+    
+}
+
+@media (min-width:668px) (max-width:888px) {
+    h3{
+        display: none;
+    }
+    h2{
+        font-size: 3vw;
+    }
+    .nav i{
+        font-size: 4vw;
+        padding-right: 2vw;
+    }
+    .web1 h1{
+        width: 96vw;
+        font-size: 8vw;
+        line-height: 8vw;
+    }
+    
+    p{
+        width: 80vw;
+        font-size: larger;
+       
+        
+    }
+    .web2 {
+        position: absolute;
+        bottom: -40%;
+        width: auto;
+        
+    }
+    .web2 img{
+        margin-top: 8%;
+       height: 70vh;
+        
+    } 
+    button{
+        margin-top: 67vh;
+        font-size: larger;
+        width: 30vw;
+        margin-left: 50%;
+       
+    }
+}
+
+
+
+
+
+
+  
